@@ -1,0 +1,361 @@
+//// mobile // tabletes/////
+@media screen and (max-width: 680px) {
+  .navbar ul li {
+    padding: 2px;
+    margin: auto;
+  }
+
+  main .hero .arrows {
+    margin: auto;
+  }
+  .flySmart .siconNtext .scard {
+    width: auto;
+    height: auto;
+    @include flexCenter(column, wrap);
+  }
+  .blue-cards .cards-wrap .card {
+    width: 280px;
+  }
+
+  .blue-cards .cards-wrap .card .bcard-text a span {
+    font-size: 1.3em;
+    position: relative;
+    top: 0.03em;
+  }
+  .tab-pane .show-on-mobile {
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: $higherBlue;
+  }
+
+  .tab-pane {
+    padding: 0;
+    .active {
+      transform: scale(1);
+    }
+  }
+  .tabarea .textBtabs a {
+    padding: 0;
+    left: 0;
+    margin-right: 0;
+  }
+
+  #nav-tab {
+    display: none;
+  }
+  #regular {
+    margin-top: 50px;
+    flex-direction: column;
+    transform: scale(1);
+    justify-content: center;
+    align-items: center;
+    .roundimg {
+      transform: scale(1);
+    }
+    .checkmark {
+      margin-top: 50px;
+      transform: scale(1);
+      margin-right: 30px;
+    }
+    .extra {
+      justify-self: baseline;
+      transform: scale(1);
+      margin-left: 13px;
+    }
+  }
+  #plus {
+    margin-top: 50px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    .roundimg {
+      transform: scale(1);
+      margin-top: 50px;
+    }
+    .checkmark {
+      margin-top: 50px;
+      transform: scale(1);
+      margin-right: 30px;
+    }
+    .extra {
+      justify-self: baseline;
+      transform: scale(1);
+      margin-left: 6px;
+    }
+  }
+  #premium {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    .roundimg {
+      transform: scale(1);
+      margin-top: 50px;
+    }
+    .checkmark {
+      margin-top: 50px;
+      transform: scale(1);
+      margin-right: 30px;
+      margin-left: 2px;
+    }
+    .extra {
+      justify-self: baseline;
+      transform: scale(1);
+    }
+  }
+
+  .footer .mailinp {
+    button {
+      max-width: 300px;
+      height: 60px;
+      font-size: 1.4em;
+      min-width: 250px;
+    }
+  }
+  #emailft {
+    max-width: 320px;
+    min-width: 260px;
+    margin-left: 1px;
+    overflow: hidden;
+  }
+  ////end one ///
+}
+
+/// end one //
+
+@media (max-width: 528px) {
+  .blue-cards .cards-wrap .card {
+    width: 250px;
+  }
+}
+
+////// mobile /////
+@media screen and (max-width: 480px) {
+  ////// navbar /////
+  #logo {
+    position: absolute;
+    top: -17px;
+    left: 0;
+    transform: scale(0.7);
+  }
+  #en-uk {
+    display: none;
+  }
+  #small {
+    margin-top: 8px;
+  }
+  .navbar {
+    flex-direction: column;
+    height: 70px;
+    .left-side {
+      width: auto;
+      margin: 0;
+      padding: 0;
+      order: 2;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      ul {
+        li {
+          padding: 5px;
+          margin-left: 10px;
+          &:nth-of-type(3) {
+            margin-right: 5px;
+          }
+          a {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .right-side {
+      margin: 0;
+      padding: 0;
+      order: 1;
+      flex-direction: row;
+      width: auto;
+
+      ul {
+        li {
+          padding: 5px;
+          a {
+            font-weight: 600;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  /////////// hero /////////////////
+
+  main .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 242px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position-y: bottom;
+
+    .hotDeals {
+      margin-top: 35px;
+      h1 {
+        font-weight: 600;
+        font-size: 2.2em;
+        line-height: 30px;
+      }
+      h3 {
+        font-weight: 600;
+      }
+      button {
+        font-size: 1rem;
+        font-weight: 600;
+        width: 120px;
+        height: 40px;
+      }
+    }
+    .arrows {
+      align-self: flex-end;
+      transform: scale(0.65);
+      position: relative;
+      bottom: 9px;
+      left: 15px;
+      margin: 0;
+    }
+  }
+  #arrow-right {
+    border-color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+  #arrow-left {
+    border-color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+
+  /////// Fly Smart ////
+  #lybreaker {
+    display: block;
+  }
+
+  .flySmart {
+    flex-direction: column;
+    .headlines {
+      h1 {
+        text-align: center;
+      }
+      h3 {
+        text-shadow: 0 1px 1px black;
+      }
+    }
+
+    .siconNtext {
+      @include flexCenter(column, wrap);
+      .scard {
+        @include flexCenter(row, nowrap);
+        .card-img {
+          transform: scale(0.8);
+          margin: -22px 16px 0 0;
+        }
+      }
+    }
+  }
+
+  ////////// blue cards ///////
+
+  #gspecial {
+    @include flexCenter(column, nowrap);
+  }
+  #breakpoing {
+    display: block;
+  }
+  #cardsh3 {
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: -110px;
+    font-size: 1.8em;
+  }
+  .blue-cards {
+    @include flexCenter(column, nowrap);
+    .cards-wrap {
+      margin-top: 45px;
+      .card {
+        margin-bottom: 10px;
+        height: 420px;
+        .bcard-text {
+          .yellowbox {
+            transform: scale(1.07);
+            font-size: 0.7em;
+            & > h3 {
+              color: $higherBlue;
+            }
+          }
+          height: auto;
+          h3 {
+            font-weight: 600;
+            font-size: 2em;
+          }
+          h4 {
+            font-weight: 500;
+            font-size: 2em;
+            text-shadow: 0 0 1px $greyDarkBlue;
+          }
+          a {
+            color: $higherBlue;
+            font-size: 1.9em;
+            position: relative;
+            top: 10px;
+            text-shadow: 0 0px 1px $higherBlue;
+            span {
+              font-size: 1.3em;
+              top: 0.1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //////// white break //////
+  ///
+  ////// Tabarea //////
+  .tabarea {
+    .container {
+      overflow: hidden;
+    }
+    .textBtabs {
+      text-align: center;
+      & a {
+        left: 0;
+        margin-right: 0;
+        text-align: center;
+      }
+    }
+  }
+  .tabarea .textBtabs a {
+    left: 0;
+  }
+
+  ///// cards blue ////
+  #nav-tab {
+    display: none;
+  }
+  #emailft {
+    min-width: 260px;
+    margin-left: 1px;
+  }
+
+  .map div > img {
+    padding: 0 5px;
+  }
+  /////////// media q end //////
+}
+/////////// media q end //////
