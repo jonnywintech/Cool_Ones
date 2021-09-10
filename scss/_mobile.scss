@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+  #logo {
+    width: 39.71px;
+    height: 38.05px;
+  }
+
+  .navbar-toggler {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: $myellow;
+    z-index: 0;
+    position: relative;
+
+    & .navbar-toggler-icon {
+      z-index: 2;
+      color: white;
+      position: relative;
+      right: 9px;
+      width: 30px;
+    }
+  }
+  .btn-weird {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: $myellow;
+  }
+
+  ////////// hero ////////@at-root
+
+  .container-mobile {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    @include flexCenter(column, wrap);
+    h1 {
+      font-size: 72px;
+      font-weight: 700;
+      color: white;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        color: $myellow;
+      }
+    }
+    h6 {
+      position: relative;
+      bottom: 30px;
+      color: white;
+      text-transform: uppercase;
+      span {
+        color: $myellow;
+      }
+    }
+  }
+
+  ////end of line/////
+}
+////end of line/////
