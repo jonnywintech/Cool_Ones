@@ -20,51 +20,57 @@
   </head>
   <body>
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
         <a class="navbar-brand" href="#">
-          <img id="logo" src="./images/1 logo/834563.png" alt="avenue logo" />
+          <img
+            id="logo"
+            src="./images/1 logo/834563.png"
+            alt=""
+            width="39px"
+            height="38px"
+          />
+          <h2>young ave deli</h2>
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Beer List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-
-          />
+        <button id="dialtone" class="btn btn-danger"></button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </div>
         </div>
-        <button class="btn btn-weird" type="submit"></button>
       </div>
     </nav>
 
     <!-- hero -->
     <div class="container-desktop"></div>
     <div class="container-mobile">
-      <img src="./images/7 mobile/Rectangle.png" alt="bg-athmosphere" />
+      <img
+        class="img-fluid"
+        src="./images/7 mobile/Rectangle.png"
+        alt="bg-athmosphere"
+      />
       <h1>
         We are <br />
         <span>midtown</span>
@@ -75,39 +81,198 @@
     <!-- sub hero -->
     <div class="container">
       <div class="subheader-icons">
-        <div class="subheader-icons">
-          <img src="./images/3 sub hero/Rectangle.png" alt="" />
-        </div>
-        <img src="./images/3 sub hero/Rectangle-1.png" alt="" />
+        <img class="img-fluid" src="./images/3 sub hero/Rectangle.png" alt="" />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-2.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-1.png"
+          alt=""
+        />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-3.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-2.png"
+          alt=""
+        />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-4.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-3.png"
+          alt=""
+        />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-5.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-4.png"
+          alt=""
+        />
+      </div>
+      <div class="subheader-icons">
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-5.png"
+          alt=""
+        />
       </div>
     </div>
 
     <!-- MENU -->
-    <div class="container-fluid">
-      <div><img src="./images/4 onmenu/Rectangle-7.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-4.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-5.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-6.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-3.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle.png" alt="live music" /></div>
-      <div>
-        <img src="./images/4 onmenu/Rectangle-1.png" alt="all kind of beers" />
+    <div id="menu" class="container-fluid">
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img src="./images/4 onmenu/beer foam.png" alt="" />
+          <div class="yellow-circle"><h1>Drafts</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-7.png"
+          alt=""
+        />
       </div>
-      <div><img src="./images/4 onmenu/Rectangle-2.png" alt="" /></div>
+
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img src="./images/4 onmenu/beer bottles.png" alt="" />
+          <div class="yellow-circle"><h1>Drafts</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-4.png"
+          alt=""
+        />
+      </div>
+
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img
+            id="coctails"
+            src="./images/4 onmenu/coctails.png"
+            alt="coctails"
+          />
+          <div class="yellow-circle"><h1>Coctails</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-5.png"
+          alt="coctail"
+        />
+      </div>
+
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img src="./images/4 onmenu/wine.png" alt="" />
+          <div class="yellow-circle"><h1>Drafts</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-6.png"
+          alt="whine"
+        />
+      </div>
+
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle.png"
+          alt="rock band"
+        />
+      </div>
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-3.png"
+          alt="shots"
+        />
+      </div>
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-1.png"
+          alt=""
+        />
+      </div>
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-2.png"
+          alt=""
+        />
+      </div>
     </div>
 
+    <!-- Signature dishes  -->
+
+    <div class="container-fluid signature-dishes">
+      <div class="heading-dishes">
+        <h1>
+          <span>Signature </span>Dishes
+          <br />
+          <hr />
+        </h1>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle.png"
+          alt=""
+        />
+        <h2>Sweet potato fries</h2>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-1.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-2.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <div class="vegan-card">
+        <h1>
+          Hand breaded cheese <br />
+          sticks
+        </h1>
+        <hr />
+        <h6>Mozzarella, breading, manarinara</h6>
+
+        <button type="button" class="veg-button">Vegeterian</button>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-6.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-5.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <button class="card-menu-large">menu</button>
+    </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

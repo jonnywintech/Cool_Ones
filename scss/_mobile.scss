@@ -1,30 +1,29 @@
 @media only screen and (max-width: 768px) {
-  #logo {
-    width: 39.71px;
-    height: 38.05px;
-  }
-
-  .navbar-toggler {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background-color: $myellow;
-    z-index: 0;
-    position: relative;
-
-    & .navbar-toggler-icon {
-      z-index: 2;
-      color: white;
-      position: relative;
-      right: 9px;
-      width: 30px;
+  .navbar-brand {
+    h2 {
+      display: inline;
+      text-transform: uppercase;
+      margin-left: 10px;
     }
   }
-  .btn-weird {
-    width: 38px;
-    height: 38px;
+  .navbar-dark .navbar-toggler {
+    width: 39px;
+    height: 39px;
     border-radius: 50%;
     background-color: $myellow;
+    .navbar-toggler-icon {
+      left: -8px;
+      right: 0;
+      position: relative;
+    }
+  }
+
+  #dialtone {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: $myellow;
+    border: none;
   }
 
   ////////// hero ////////@at-root
@@ -35,13 +34,17 @@
     margin: 0;
     padding: 0;
     @include flexCenter(column, wrap);
+    img {
+      object-fit: cover;
+    }
     h1 {
-      font-size: 72px;
+      font-size: 90px;
       font-weight: 700;
       color: white;
       position: absolute;
       text-align: center;
       text-transform: uppercase;
+      line-height: 70px;
       span {
         color: $myellow;
       }
@@ -54,6 +57,148 @@
       span {
         color: $myellow;
       }
+    }
+  }
+  ///////// sub hero //////////
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+    .subheader-icons {
+      border: 1px solid lightgrey;
+      border-radius: 15px;
+      max-width: 108px;
+      @include flexCenter(column, wrap);
+      img {
+        background-position: cover;
+        max-width: 80px;
+        max-height: 64px;
+        filter: brightness(40%);
+      }
+    }
+  }
+  //////////////// Menu /////////////
+  #menu {
+    .menu-item-wrap {
+      position: relative;
+      .yellow-circle-menu {
+        margin: auto;
+        align-self: center;
+        @include flexCenter(column, nowrap);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        .yellow-circle {
+          @include flexCenter(column, nowrap);
+          position: absolute;
+          width: 177px;
+          height: 177px;
+          background-color: $myellow;
+          border-radius: 50%;
+
+          h1 {
+            font-size: 40px;
+            font-family: "Teko";
+            text-transform: uppercase;
+            color: white;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+  #coctails {
+    margin-bottom: 45px;
+  }
+
+  ////// signature dishes /////@at-root
+  .container-fluid.signature-dishes {
+    .heading-dishes {
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        span {
+          color: $myellow;
+        }
+        hr {
+          width: 50px;
+          border: 2px solid orangered;
+          align-self: center;
+          filter: none;
+          margin: auto;
+          border-radius: 20%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .signature-card-wrap {
+      @include flexCenter(column, nowrap);
+      box-shadow: 1px 1px 12px lightgrey;
+      border-radius: 20px;
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 25px 0;
+        font-weight: 600;
+      }
+      margin-bottom: 60px;
+    }
+    button {
+      width: 80%;
+      height: 50px;
+      background: $myellow;
+      color: white;
+      border-radius: 20px;
+      border: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+
+  .vegan-card {
+    @include flexCenter(column, nowrap);
+    background: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    h1 {
+      margin-top: 81px;
+      color: white;
+      text-align: center;
+    }
+    hr {
+      width: 50px;
+      border: 2px solid $myellow;
+      align-self: center;
+      filter: none;
+      margin: auto;
+      border-radius: 20%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    h6 {
+      color: grey;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+    .veg-button {
+      border-radius: 20px;
+      width: 130px;
+      height: 30px;
+      background: $myellow;
+      color: white;
+      border: none;
+      margin-bottom: 71px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
   }
 
