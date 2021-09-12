@@ -325,8 +325,226 @@
   .menu-button > button {
     width: 330px;
   }
+  .comment-section {
+    background: #f8f8f8;
+    padding-top: 40px;
+    border: 2px solid white;
+  }
   .comment-section .comment-wrapper {
-    background: url("../src/images/vector.png") center/cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    position: relative;
+    height: 320px;
+    margin-bottom: 30px;
+  }
+  .comment-section .comment-wrapper .smiley {
+    position: absolute;
+    background-size: cover;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .comment-section .comment-wrapper .face-icon {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .comment-section .comment-wrapper .yellow-dots {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+  .comment-section .comment-wrapper p {
+    display: inline-block;
+    width: auto;
+    margin-top: 150px;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    border-collapse: separate;
+    border-right: 4px solid #f2a60c;
+    border-left: 4px solid #f2a60c;
+    padding: 16px 30px;
+    font-size: 25px;
+  }
+  .comment-section .comment-wrapper h6 {
+    font-family: "Blinker", sans-serif;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #f2a60c;
+  }
+  .comment-section .comment-wrapper h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  .comment-section .comment-wrapper h2 span {
+    color: #f2a60c;
+  }
+  .night-happening .card-wrap-night {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .night-happening .card-wrap-night .yellow-circle-night {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 170px;
+    height: 170px;
+    background: #f2a60c;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 50%;
+  }
+  .night-happening .card-wrap-night .yellow-circle-night h3 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Blinker", sans-serif;
+  }
+  .black-card-nigh-wrap {
+    background-color: black;
+  }
+  .black-card-nigh-wrap h1 {
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+  .black-card-nigh-wrap h1 hr {
+    width: 50px;
+    margin: auto;
+    margin-top: 13px;
+    height: 3px;
+    color: #f2a60c;
+  }
+  .black-card-nigh-wrap h1 span {
+    color: #f2a60c;
+    margin-left: 20px;
+  }
+  .black-card-nigh-wrap p {
+    color: white;
+    margin: 10px 34px 0 34px;
+    font-family: "Bliner", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0.5;
+    padding-bottom: 143px;
+  }
+  .beer-club-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 100%;
+    background: #f2a60c;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  .beer-club-wrapper h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+  }
+  .beer-club-wrapper input {
+    display: block;
+    min-width: 306px;
+    height: 46px;
+    margin: 8px 10px;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: white;
+    background: #f5b83d;
+    opacity: 0.7;
+    border: none;
+  }
+  .beer-club-wrapper input::-webkit-input-placeholder {
+    color: white;
+  }
+  .beer-club-wrapper input:-ms-input-placeholder {
+    color: white;
+  }
+  .beer-club-wrapper input::-ms-input-placeholder {
+    color: white;
+  }
+  .beer-club-wrapper input::placeholder {
+    color: white;
+  }
+  .beer-club-wrapper .btn-submit-beer {
+    color: white;
+    background: black;
+    min-width: 306px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-transform: uppercase;
+    border-radius: 2em;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: "Blinker", sans-serif;
+    font-size: 14px;
   }
   hr {
     opacity: 1;
