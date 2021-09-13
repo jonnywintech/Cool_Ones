@@ -1,67 +1,22 @@
-/// colors ////
-$brightBlue: #38bdff;
-$mediumBlue: #113da3; /// nav ///
-$higherBlue: #002f9d;
-$greyDarkBlue: #021f59;
-$greyLight: #777474;
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap");
 
-////  flexbox /////
+$myellow: #f2a60c;
 
-@mixin flexCenter($dirE, $wrapD) {
+@mixin flexCenter($direction, $wrap) {
   display: flex;
-  flex-direction: $dirE;
-  flex-wrap: $wrapD;
-  align-content: center;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 
-/* open sans font */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-
-/* all properties */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Teko", sans-serif;
 }
 
-/////   navbar ///////
-
-@import "./navbar";
-
-/////  hero /////
-
-@import "./hero";
-
-///// fly smart ////
-
-@import "./flySmart";
-
-//// blue carsds with offers ////
-
-@import "./blecards";
-
-//// small white break ///
-
-@import "./smallBreak";
-
-///// card tab bar ///
-
-@import "./cardTabBar";
-
-//// footer ////
-
-@import "./footer";
-
-// media querry Tablet ////
-
-@import "./mediaTab";
-
-////// mobile //////
-
+///////// mobile version /////
 @import "./mobile";
-
-////// login /////
-@import "./login";

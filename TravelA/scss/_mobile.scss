@@ -1,361 +1,399 @@
-//// mobile // tabletes/////
-@media screen and (max-width: 680px) {
-  .navbar ul li {
-    padding: 2px;
-    margin: auto;
-  }
-
-  main .hero .arrows {
-    margin: auto;
-  }
-  .flySmart .siconNtext .scard {
-    width: auto;
-    height: auto;
-    @include flexCenter(column, wrap);
-  }
-  .blue-cards .cards-wrap .card {
-    width: 280px;
-  }
-
-  .blue-cards .cards-wrap .card .bcard-text a span {
-    font-size: 1.3em;
-    position: relative;
-    top: 0.03em;
-  }
-  .tab-pane .show-on-mobile {
-    display: block;
-    margin: 20px auto 0 auto;
-    text-align: center;
-    color: $higherBlue;
-  }
-
-  .tab-pane {
-    padding: 0;
-    .active {
-      transform: scale(1);
+@media only screen and (max-width: 768px) {
+  .navbar-brand {
+    h2 {
+      display: inline;
+      text-transform: uppercase;
+      margin-left: 10px;
     }
   }
-  .tabarea .textBtabs a {
-    padding: 0;
-    left: 0;
-    margin-right: 0;
-  }
-
-  #nav-tab {
-    display: none;
-  }
-  #regular {
-    margin-top: 50px;
-    flex-direction: column;
-    transform: scale(1);
-    justify-content: center;
-    align-items: center;
-    .roundimg {
-      transform: scale(1);
-    }
-    .checkmark {
-      margin-top: 50px;
-      transform: scale(1);
-      margin-right: 30px;
-    }
-    .extra {
-      justify-self: baseline;
-      transform: scale(1);
-      margin-left: 13px;
-    }
-  }
-  #plus {
-    margin-top: 50px;
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    .roundimg {
-      transform: scale(1);
-      margin-top: 50px;
-    }
-    .checkmark {
-      margin-top: 50px;
-      transform: scale(1);
-      margin-right: 30px;
-    }
-    .extra {
-      justify-self: baseline;
-      transform: scale(1);
-      margin-left: 6px;
-    }
-  }
-  #premium {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    .roundimg {
-      transform: scale(1);
-      margin-top: 50px;
-    }
-    .checkmark {
-      margin-top: 50px;
-      transform: scale(1);
-      margin-right: 30px;
-      margin-left: 2px;
-    }
-    .extra {
-      justify-self: baseline;
-      transform: scale(1);
-    }
-  }
-
-  .footer .mailinp {
-    button {
-      max-width: 300px;
-      height: 60px;
-      font-size: 1.4em;
-      min-width: 250px;
-    }
-  }
-  #emailft {
-    max-width: 320px;
-    min-width: 260px;
-    margin-left: 1px;
-    overflow: hidden;
-  }
-  ////end one ///
-}
-
-/// end one //
-
-@media (max-width: 528px) {
-  .blue-cards .cards-wrap .card {
-    width: 250px;
-  }
-}
-
-////// mobile /////
-@media screen and (max-width: 480px) {
-  ////// navbar /////
-  #logo {
-    position: absolute;
-    top: -17px;
-    left: 0;
-    transform: scale(0.7);
-  }
-  #en-uk {
-    display: none;
-  }
-  #small {
-    margin-top: 8px;
-  }
-  .navbar {
-    flex-direction: column;
-    height: 70px;
-    .left-side {
-      width: auto;
-      margin: 0;
-      padding: 0;
-      order: 2;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-
-      ul {
-        li {
-          padding: 5px;
-          margin-left: 10px;
-          &:nth-of-type(3) {
-            margin-right: 5px;
-          }
-          a {
-            font-weight: 600;
-          }
-        }
-      }
-    }
-    .right-side {
-      margin: 0;
-      padding: 0;
-      order: 1;
-      flex-direction: row;
-      width: auto;
-
-      ul {
-        li {
-          padding: 5px;
-          a {
-            font-weight: 600;
-            color: black;
-          }
-        }
-      }
-    }
-  }
-
-  /////////// hero /////////////////
-
-  main .hero {
-    flex-direction: column;
-    align-items: flex-start;
-    height: 242px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position-y: bottom;
-
-    .hotDeals {
-      margin-top: 35px;
-      h1 {
-        font-weight: 600;
-        font-size: 2.2em;
-        line-height: 30px;
-      }
-      h3 {
-        font-weight: 600;
-      }
-      button {
-        font-size: 1rem;
-        font-weight: 600;
-        width: 120px;
-        height: 40px;
-      }
-    }
-    .arrows {
-      align-self: flex-end;
-      transform: scale(0.65);
+  .navbar-dark .navbar-toggler {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: $myellow;
+    .navbar-toggler-icon {
+      left: -8px;
+      right: 0;
       position: relative;
-      bottom: 9px;
-      left: 15px;
-      margin: 0;
-    }
-  }
-  #arrow-right {
-    border-color: rgba($color: #ffffff, $alpha: 0.3);
-  }
-  #arrow-left {
-    border-color: rgba($color: #ffffff, $alpha: 0.3);
-  }
-
-  /////// Fly Smart ////
-  #lybreaker {
-    display: block;
-  }
-
-  .flySmart {
-    flex-direction: column;
-    .headlines {
-      h1 {
-        text-align: center;
-      }
-      h3 {
-        text-shadow: 0 1px 1px black;
-      }
-    }
-
-    .siconNtext {
-      @include flexCenter(column, wrap);
-      .scard {
-        @include flexCenter(row, nowrap);
-        .card-img {
-          transform: scale(0.8);
-          margin: -22px 16px 0 0;
-        }
-      }
     }
   }
 
-  ////////// blue cards ///////
-
-  #gspecial {
-    @include flexCenter(column, nowrap);
-  }
-  #breakpoing {
-    display: block;
-  }
-  #cardsh3 {
-    text-align: center;
-    left: 0;
-    right: 0;
-    top: -110px;
-    font-size: 1.8em;
-  }
-  .blue-cards {
-    @include flexCenter(column, nowrap);
-    .cards-wrap {
-      margin-top: 45px;
-      .card {
-        margin-bottom: 10px;
-        height: 420px;
-        .bcard-text {
-          .yellowbox {
-            transform: scale(1.07);
-            font-size: 0.7em;
-            & > h3 {
-              color: $higherBlue;
-            }
-          }
-          height: auto;
-          h3 {
-            font-weight: 600;
-            font-size: 2em;
-          }
-          h4 {
-            font-weight: 500;
-            font-size: 2em;
-            text-shadow: 0 0 1px $greyDarkBlue;
-          }
-          a {
-            color: $higherBlue;
-            font-size: 1.9em;
-            position: relative;
-            top: 10px;
-            text-shadow: 0 0px 1px $higherBlue;
-            span {
-              font-size: 1.3em;
-              top: 0.1em;
-            }
-          }
-        }
-      }
-    }
+  #dialtone {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-color: $myellow;
+    border: none;
   }
 
-  //////// white break //////
-  ///
-  ////// Tabarea //////
-  .tabarea {
-    .container {
-      overflow: hidden;
+  ////////// hero ////////@at-root
+
+  .container-mobile {
+    margin: 0;
+    padding: 0;
+    @include flexCenter(column, wrap);
+    img {
+      width: 100%;
+      object-fit: cover;
     }
-    .textBtabs {
+    h1 {
+      font-size: 90px;
+      font-weight: 700;
+      color: white;
+      position: absolute;
       text-align: center;
-      & a {
-        left: 0;
-        margin-right: 0;
-        text-align: center;
+      text-transform: uppercase;
+      line-height: 70px;
+      span {
+        color: $myellow;
+      }
+    }
+    h6 {
+      position: relative;
+      bottom: 30px;
+      color: white;
+      text-transform: uppercase;
+      span {
+        color: $myellow;
       }
     }
   }
-  .tabarea .textBtabs a {
-    left: 0;
+  ///////// sub hero //////////
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+    .subheader-icons {
+      border: 1px solid lightgrey;
+      border-radius: 15px;
+      max-width: 108px;
+      @include flexCenter(column, wrap);
+      img {
+        background-position: cover;
+        max-width: 80px;
+        max-height: 64px;
+        filter: brightness(40%);
+      }
+    }
+  }
+  //////////////// Menu /////////////
+  #menu {
+    .menu-item-wrap {
+      position: relative;
+      width: 100%;
+      & > img {
+        width: 100%;
+      }
+      .yellow-circle-menu {
+        width: 100%;
+        margin: auto;
+        align-self: center;
+        @include flexCenter(column, nowrap);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        .yellow-circle {
+          @include flexCenter(column, nowrap);
+          position: absolute;
+          width: 177px;
+          height: 177px;
+          background-color: $myellow;
+          border-radius: 50%;
+
+          h1 {
+            font-size: 40px;
+            font-family: "Teko";
+            text-transform: uppercase;
+            color: white;
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+  #coctails {
+    margin-bottom: 45px;
   }
 
-  ///// cards blue ////
-  #nav-tab {
-    display: none;
-  }
-  #emailft {
-    min-width: 260px;
-    margin-left: 1px;
+  ////// signature dishes /////@at-root
+  .container-fluid.signature-dishes {
+    .heading-dishes {
+      h1 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-top: 50px;
+        text-transform: uppercase;
+        text-align: center;
+        span {
+          color: $myellow;
+        }
+        hr {
+          width: 50px;
+          border: 2px solid orangered;
+          align-self: center;
+          filter: none;
+          margin: auto;
+          border-radius: 20%;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .signature-card-wrap {
+      @include flexCenter(column, nowrap);
+      box-shadow: 1px 1px 12px lightgrey;
+      border-radius: 20px;
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 25px 0;
+        font-weight: 600;
+      }
+      margin-bottom: 60px;
+    }
+    & button {
+      width: 230px;
+      height: 50px;
+      background: $myellow;
+      color: white;
+      border-radius: 20px;
+      border: none;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 50px;
+    }
   }
 
-  .map div > img {
-    padding: 0 5px;
+  .vegan-card {
+    @include flexCenter(column, nowrap);
+    background: black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    h1 {
+      margin-top: 81px;
+      color: white;
+      text-align: center;
+    }
+    hr {
+      width: 50px;
+      border: 2px solid $myellow;
+      align-self: center;
+      filter: none;
+      margin: auto;
+      border-radius: 20%;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    h6 {
+      color: grey;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+    .veg-button > button {
+      border-radius: 20px;
+      width: 130px;
+      height: 30px;
+      background: $myellow;
+      color: white;
+      border: none;
+      margin-bottom: 71px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
   }
-  /////////// media q end //////
+  .menu-button {
+    @include flexCenter(column, nowrap);
+    & > button {
+      width: 330px;
+    }
+  }
+
+  .comment-section {
+    background: #f8f8f8;
+    padding-top: 40px;
+    border: 2px solid white;
+
+    .comment-wrapper {
+      @include flexCenter(column, nowrap);
+      background: white;
+      border-radius: 20px;
+      border: 2px solid white;
+      position: relative;
+      height: 320px;
+      margin-bottom: 30px;
+      .smiley {
+        position: absolute;
+        background-size: cover;
+        width: 220px;
+        height: 220px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+      .face-icon {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+      .yellow-dots {
+        position: absolute;
+        right: 0;
+        top: 20px;
+      }
+      p {
+        display: inline-block;
+        width: auto;
+        margin-top: 150px;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        border-collapse: separate;
+        border-right: 4px solid $myellow;
+        border-left: 4px solid $myellow;
+        padding: 16px 30px;
+        font-size: 25px;
+      }
+      h6 {
+        font-family: "Blinker", sans-serif;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        color: $myellow;
+      }
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 500;
+        span {
+          color: $myellow;
+        }
+      }
+    }
+  }
+  ///////////////////  night section happening //////////@at-root
+
+  .night-happening .card-wrap-night {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .yellow-circle-night {
+      display: flex;
+      width: 170px;
+      height: 170px;
+      background: $myellow;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      border-radius: 50%;
+      h3 {
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-family: "Blinker", sans-serif;
+      }
+    }
+    //// dark section ////@at-root
+  }
+  .black-card-nigh-wrap {
+    background-color: black;
+    h1 {
+      padding-top: 150px;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+      hr {
+        width: 50px;
+        margin: auto;
+        margin-top: 13px;
+        height: 3px;
+        color: $myellow;
+      }
+      span {
+        color: $myellow;
+        margin-left: 20px;
+      }
+    }
+    p {
+      color: white;
+      margin: 10px 34px 0 34px;
+      font-family: "Bliner", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: center;
+      opacity: 0.5;
+      padding-bottom: 143px;
+    }
+  }
+
+  .beer-club-wrapper {
+    @include flexCenter(column, nowrap);
+    width: 100%;
+    background: $myellow;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    h1 {
+      color: white;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    input {
+      display: block;
+      min-width: 306px;
+      height: 46px;
+      margin: 8px 10px;
+      border-radius: 20px;
+      padding-left: 20px;
+      color: white;
+      background: #f5b83d;
+      opacity: 0.7;
+      border: none;
+      &::placeholder {
+        color: white;
+      }
+    }
+    .btn-submit-beer {
+      color: white;
+      background: black;
+      min-width: 306px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      border-radius: 2em;
+      margin-bottom: 30px;
+      margin-top: 10px;
+      font-family: "Blinker", sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  hr {
+    opacity: 1;
+  }
+  ////end of line/////
 }
-/////////// media q end //////
+////end of line/////
