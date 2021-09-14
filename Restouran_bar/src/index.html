@@ -20,51 +20,58 @@
   </head>
   <body>
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img id="logo" src="./images/1 logo/834563.png" alt="avenue logo" />
-        </a>
+
+    <nav id="navbar-my" class="navbar navbar-dark">
+      <div class="container">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img
+              id="logo"
+              src="./images/1 logo/834563.png"
+              alt=""
+              width="39px"
+              height="38px"
+            />
+            <h2>young ave deli</h2>
+          </a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Beer List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Galery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-
-          />
+        <button id="dialtone" class="btn btn-danger"></button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a
+              class="nav-link disabled"
+              href="#"
+              tabindex="-1"
+              aria-disabled="true"
+              >Disabled</a
+            >
+          </div>
         </div>
-        <button class="btn btn-weird" type="submit"></button>
       </div>
     </nav>
 
     <!-- hero -->
     <div class="container-desktop"></div>
     <div class="container-mobile">
-      <img src="./images/7 mobile/Rectangle.png" alt="bg-athmosphere" />
+      <img
+        class="img-fluid"
+        src="./images/7 mobile/Rectangle.png"
+        alt="bg-athmosphere"
+      />
       <h1>
         We are <br />
         <span>midtown</span>
@@ -75,37 +82,454 @@
     <!-- sub hero -->
     <div class="container">
       <div class="subheader-icons">
-        <div class="subheader-icons">
-          <img src="./images/3 sub hero/Rectangle.png" alt="" />
-        </div>
-        <img src="./images/3 sub hero/Rectangle-1.png" alt="" />
+        <img class="img-fluid" src="./images/3 sub hero/Rectangle.png" alt="" />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-2.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-1.png"
+          alt=""
+        />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-3.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-2.png"
+          alt=""
+        />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-4.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-3.png"
+          alt=""
+        />
       </div>
       <div class="subheader-icons">
-        <img src="./images/3 sub hero/Rectangle-5.png" alt="" />
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-4.png"
+          alt=""
+        />
+      </div>
+      <div class="subheader-icons">
+        <img
+          class="img-fluid"
+          src="./images/3 sub hero/Rectangle-5.png"
+          alt=""
+        />
       </div>
     </div>
 
     <!-- MENU -->
-    <div class="container-fluid">
-      <div><img src="./images/4 onmenu/Rectangle-7.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-4.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-5.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-6.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle-3.png" alt="" /></div>
-      <div><img src="./images/4 onmenu/Rectangle.png" alt="live music" /></div>
-      <div>
-        <img src="./images/4 onmenu/Rectangle-1.png" alt="all kind of beers" />
+    <div id="menu" class="container-fluid">
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img src="./images/4 onmenu/beer foam.png" alt="" />
+          <div class="yellow-circle"><h1>Drafts</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-7.png"
+          alt=""
+        />
       </div>
-      <div><img src="./images/4 onmenu/Rectangle-2.png" alt="" /></div>
+
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img src="./images/4 onmenu/beer bottles.png" alt="" />
+          <div class="yellow-circle"><h1>Drafts</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-4.png"
+          alt=""
+        />
+      </div>
+
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img
+            id="coctails"
+            src="./images/4 onmenu/coctails.png"
+            alt="coctails"
+          />
+          <div class="yellow-circle"><h1>Coctails</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-5.png"
+          alt="coctail"
+        />
+      </div>
+
+      <div class="menu-item-wrap">
+        <div class="yellow-circle-menu">
+          <img src="./images/4 onmenu/wine.png" alt="" />
+          <div class="yellow-circle"><h1>Drafts</h1></div>
+        </div>
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-6.png"
+          alt="whine"
+        />
+      </div>
+
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle.png"
+          alt="rock band"
+        />
+      </div>
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-3.png"
+          alt="shots"
+        />
+      </div>
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-1.png"
+          alt=""
+        />
+      </div>
+      <div class="menu-item-wrap">
+        <img
+          class="menu-img-item"
+          src="./images/4 onmenu/Rectangle-2.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Signature dishes  -->
+
+    <div class="container-fluid signature-dishes">
+      <div class="heading-dishes">
+        <h1>
+          <span>Signature </span>Dishes
+          <br />
+          <hr />
+        </h1>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle.png"
+          alt=""
+        />
+        <h2>Sweet potato fries</h2>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-1.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-2.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <div class="vegan-card">
+        <h1>
+          Hand breaded cheese <br />
+          sticks
+        </h1>
+        <hr />
+        <h6>Mozzarella, breading, manarinara</h6>
+
+        <button type="button" class="veg-button">Vegeterian</button>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-6.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+
+      <div class="signature-card-wrap">
+        <img
+          class="img-fluid"
+          src="./images/5.1 signature dishes/Rectangle-5.png"
+          alt=""
+        />
+        <h2>Pizza</h2>
+      </div>
+      <div class="container-fluid menu-button">
+        <button class="card-menu-large">menu</button>
+      </div>
+    </div>
+
+    <!-- comments -->
+
+    <div class="container-fluid comment-section">
+      <div class="comment-wrapper">
+        <img class="smiley" src="./images/Vector.png" alt="" />
+        <img
+          class="face-icon"
+          src="./images/5 social comments/Ellipse 11.png"
+          alt=""
+        />
+        <img
+          class="yellow-dots"
+          src="./images/5 social comments/Vector-1.png"
+          alt=""
+        />
+        <p>This is the best place ever</p>
+
+        <h6>google</h6>
+        <h2>Janice <span>Damon</span></h2>
+      </div>
+      <div class="comment-wrapper">
+        <img class="smiley" src="./images/Vector.png" alt="" />
+        <img
+          class="face-icon"
+          src="./images/5 social comments/Ellipse 11-1.png"
+          alt=""
+        />
+        <img
+          class="yellow-dots"
+          src="./images/5 social comments/Vector-1.png"
+          alt=""
+        />
+        <p>Young Ave is the shit</p>
+
+        <h6>facebook</h6>
+        <h2>David <span>Bronson</span></h2>
+      </div>
+      <div class="comment-wrapper">
+        <img class="smiley" src="./images/Vector.png" alt="" />
+        <img
+          class="face-icon"
+          src="./images/5 social comments/Ellipse 11-2.png"
+          alt=""
+        />
+        <img
+          class="yellow-dots"
+          src="./images/5 social comments/Vector-1.png"
+          alt=""
+        />
+        <p>The cheese sticks are to die for</p>
+
+        <h6>yelp</h6>
+        <h2>alex <span>donovan</span></h2>
+      </div>
+      <div class="comment-wrapper">
+        <img class="smiley" src="./images/Vector.png" alt="" />
+        <img
+          class="face-icon"
+          src="./images/5 social comments/Ellipse 11-3.png"
+          alt=""
+        />
+        <img
+          class="yellow-dots"
+          src="./images/5 social comments/Vector-1.png"
+          alt=""
+        />
+        <p>Love this!</p>
+
+        <h6>Trip advisor</h6>
+        <h2>rachel <span>parson</span></h2>
+      </div>
+    </div>
+
+    <!-- //////// night happening /////// -->
+
+    <div class="container-fluid night-happening">
+      <div class="card-wrap-night">
+        <img
+          class="img-fluid"
+          src="./images/8 nigh-happening/Rectangle.png"
+          alt=""
+        />
+        <div class="yellow-circle-night">
+          <h3>Trivia Night</h3>
+        </div>
+      </div>
+      <div class="black-card-nigh-wrap">
+        <h1>
+          Industry <span> Night</span>
+          <br />
+          <hr />
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum radius tristique.
+        </p>
+      </div>
+
+      <div class="card-wrap-night">
+        <img src="./images/4 onmenu/Rectangle-7.png" alt="" />
+        <div class="yellow-circle-night">
+          <h3>Pint night</h3>
+        </div>
+      </div>
+      <div class="card-wrap-night">
+        <img src="./images/8 nigh-happening/Rectangle-1.png" alt="" />
+        <div class="yellow-circle-night">
+          <h3>all the sports</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- ////// order beer and about //////  -->
+    <div class="container-fluid two-cards-wrap">
+      <div class="beer-club-wrapper">
+        <h1>Beer club</h1>
+        <form action="submit">
+          <input
+            type="date"
+            name="date"
+            id="inp-date"
+            placeholder="Date (dd/mm)"
+          />
+          <input
+            type="time"
+            name="time"
+            id="inp-time"
+            placeholder="Time(hh/mm)"
+          />
+          <input
+            type="text"
+            name="guest"
+            id="inp-guest"
+            placeholder="Guest (Ex.8)"
+          />
+          <input type="text" name="name" id="inp-name" placeholder="Name" />
+          <input type="email" name="email" id="inp-email" placeholder="Email" />
+          <input type="phone" name="phone" id="inp-phone" placeholder="Phone" />
+
+          <button class="btn btn-submit-beer">beer me</button>
+        </form>
+      </div>
+
+      <!-- ///// about us card //// -->
+      <div class="about-us">
+        <h1>about <span>us</span></h1>
+        <hr />
+        <h4>
+          Young Ave Dell is a Midtown Memphis <br />
+          staple.More content should go here.....
+        </h4>
+        <p>
+          For a chance to win a FREE t-shirt monthly, <br />
+          sign up for our newsletter below.
+        </p>
+        <form action="newsletter">
+          <input
+            type="email"
+            name="email"
+            id="newsletter"
+            placeholder="Newsletter (Email)"
+          />
+          <button class="newsletter-button">
+            <img
+              src="./images/6 social media icons and rest of svg/telegram.png"
+              alt="send"
+            />
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="google-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d519.4473015273051!2d12.962217776288922!3d42.56723316203142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1631578319268!5m2!1sen!2srs"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="social">
+        <div class="social-img">
+          <img
+            src="./images/6 social media icons and rest of svg/facebook.png"
+            alt="facebook"
+          />
+        </div>
+        <div class="social-img">
+          <img
+            src="./images/6 social media icons and rest of svg/twitter.png"
+            alt="twitter"
+          />
+        </div>
+        <div class="social-img">
+          <img
+            src="./images/6 social media icons and rest of svg/instagram.png"
+            alt="instagram"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- //// give us a shout ///// -->
+    <div class="give-us-shout">
+      <h3>give us a shout</h3>
+      <form action="send-message">
+        <input type="text" name="name" id="name-shout" placeholder="Name" />
+        <input type="email" name="email" id="emaol-shout" placeholder="Email" />
+        <input
+          type="text"
+          name="message"
+          id="message-shout"
+          placeholder="Message"
+        />
+        <button class="send-message-btn">Send message</button>
+      </form>
+    </div>
+    <!-- /////// fooooter ////// -->
+    <div class="footer">
+      <div class="info-wrap">
+        <ul>
+          <li>
+            <img
+              src="./images/6 social media icons and rest of svg/Vector.png"
+              alt="here"
+            />
+            2119 young ave, memphis tn
+          </li>
+          <li>
+            <img
+              src="./images/6 social media icons and rest of svg/message-mail.png"
+              alt="message"
+            />info@youngavenuedeli.com
+          </li>
+          <li>
+            <img
+              src="./images/6 social media icons and rest of svg/Vector-1.png"
+              alt=""
+            />(901)278-0034
+          </li>
+        </ul>
+      </div>
+      <div class="rest-footer">
+        <ul>
+          <li><a href="#">link #1</a></li>
+          <li><span>*</span></li>
+          <li><a href="#">Link #2</a></li>
+          <li><span>*</span></li>
+          <li><a href="#">Link #3</a></li>
+        </ul>
+        <p>
+          made with <span class="hearth">&#10084;</span> by
+          <span>cache cow</span>
+        </p>
+      </div>
     </div>
 
     <!-- Bootstrap JavaScript Libraries -->
